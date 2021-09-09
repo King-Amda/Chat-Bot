@@ -17,8 +17,6 @@ KINGAMDA = Client(
 START_IMG = "https://telegra.ph/file/3ea20a755f67a981eda42.jpg"
 
 START_TEXT = """
-HI {}
-
 𝐊𝐢𝐧𝐠 𝐀𝐦𝐝𝐚 ගෙ 𝐏𝐌 𝐒𝐞𝐜𝐮𝐫𝐢𝐭𝐲 එකෙන් ඔයාට 𝐊𝐢𝐧𝐠 𝐀𝐦𝐝𝐚 ට 𝐌𝐬𝐠 දාන්න දෙන්නෙ නෑ ..
 
 ඒකට විකල්පයක් විදියට තමයි 𝐊𝐢𝐧𝐠 𝐀𝐦𝐝𝐚 𝐁𝐨𝐭 ව හැදුවෙ..
@@ -46,7 +44,7 @@ START_BUTTON = InlineKeyboardMarkup(
 @KINGAMDA.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
     await update.reply_photo(START_IMG)
-        caption=START_TEXT.format(update.from_user.mention),
+        caption=START_TEXT,
         reply_markup=START_BUTTON,
         disable_web_page_preview=True,
         quote=True
