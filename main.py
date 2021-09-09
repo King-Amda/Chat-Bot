@@ -14,6 +14,7 @@ KINGAMDA = Client(
     api_hash = os.environ["API_HASH"]
 )
 
+START_IMG = "https://telegra.ph/file/3ea20a755f67a981eda42.jpg"
 
 START_TEXT = """
 𝐊𝐢𝐧𝐠 𝐀𝐦𝐝𝐚 ගෙ 𝐏𝐌 𝐒𝐞𝐜𝐮𝐫𝐢𝐭𝐲 එකෙන් ඔයාට 𝐊𝐢𝐧𝐠 𝐀𝐦𝐝𝐚 ට 𝐌𝐬𝐠 දාන්න දෙන්නෙ නෑ ..
