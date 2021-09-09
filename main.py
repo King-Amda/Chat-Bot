@@ -44,8 +44,7 @@ START_BUTTON = InlineKeyboardMarkup(
 @KINGAMDA.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
     await update.reply_photo(START_IMG)
-    await update.reply_text(
-        text=START_TEXT.format(update.from_user.mention),
+        caption=START_TEXT.format(update.from_user.mention),
         reply_markup=START_BUTTON,
         disable_web_page_preview=True,
         quote=True
