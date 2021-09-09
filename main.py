@@ -27,3 +27,27 @@ START_TEXT = """
 ඔයාට ඕන ඒවා තියෙනම් එතනින් ගන්න පුලුවන්.. 
 යටම තීන 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐊𝐢𝐧𝐠 𝐀𝐦𝐝𝐚 බටන් එකෙන් ඔයාට 𝐊𝐢𝐧𝐠 𝐀𝐦𝐝𝐚 ව සම්බන්ධ කර ගන්න පුලුවන්.
 """
+
+START_BUTTON = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('King Amda Telegram', callback_data='cbcmdsm'),
+        InlineKeyboardButton('King Amda Whatsap',callback_data='infoan_me')
+        ],
+        [
+        InlineKeyboardButton('Our Main Bot(Anki Cozmo)',callback_data='infoan_me'),
+        InlineKeyboardButton('GitHub',url='https://github.com/King-Amda')
+        ],
+        [InlineKeyboardButton('Apply For Anki Cozmo Devs', url='https://forms.gle/zvspqb7Nn2MvWmbu8')
+        ]]
+)
+
+@KINGAMDA.on_message(filters.private & filters.command(["start"]))
+async def start(bot, update):
+    await update.reply_photo(START_IMG)
+    await update.reply_text(
+        text=START_TEXT.format(update.from_user.mention),
+        reply_markup=START_BUTTON,
+        disable_web_page_preview=True,
+        quote=True
+        
+KINGAMDA.run()        
