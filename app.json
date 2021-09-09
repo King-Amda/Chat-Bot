@@ -1,47 +1,40 @@
 {
-      "name": "King Amda",
-      "description": "An Anime themed Telegram group management bot.",
-      "logo": "https://telegra.ph/file/3ea20a755f67a981eda42.jpg",
-      "keywords": [
-         "kingamda"
-      ],   
-   "repository": "https://github.com/King-Amda/Chat-Bot",
-   "addons": [
-      {
-         "options": {
-            "version": "12"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
-   "buildpacks": [
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    "name": "King Amda",
+    "description": "king Amda",
+    "logo": "https://telegra.ph/file/3ea20a755f67a981eda42.jpg",
+    "keywords": [
+        "king",
+        "amda",
+        "Telegram Bot",
+        "kingamda"
+    ],
+    "website": "https://damantha.tk",
+    "repository": "https://github.com/King-Amda/Chat-Bot",
+    "success_url": "https://t.me/TheAnkiVectorbot",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+        }
     },
-    {
-      "url": "heroku/python"
-    }     
-  ],      
-   "env": {
-      "BOT_TOKEN": {
-         "description": "Your bot token. Get one from @BotFather duh",
-         "required": true,
-         "value": ""
-      },
-      "API_ID": {
-         "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
-         "required": true,
-         "value": ""
-      },
-      "API_HASH": {
-         "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
-         "required": true,
-         "value": ""
-      }
-   },
-   "keywords": [
-      "kingamda",
-   ],
-   "name": "KingAmda",
-   "repository": "https://github.com/King-Amda/Chat-Bot"
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
 }
