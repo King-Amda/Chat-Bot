@@ -49,5 +49,6 @@ async def start(bot, update):
         reply_markup=START_BUTTON,
         disable_web_page_preview=True,
         quote=True
-        
+)
+    
 KINGAMDA.run()        
