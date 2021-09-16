@@ -14,7 +14,7 @@ KINGAMDA = Client(
     api_hash = os.environ["API_HASH"]
 )
 
-START_IMG = "https://telegra.ph/file/3ea20a755f67a981eda42.jpg"
+START_IMG = "https://telegra.ph/file/66623ce5d08ec0323ce40.jpg"
 
 START_TEXT = """
 𝐃𝐚𝐫𝐤 𝐒𝐡𝐚𝐫𝐤 ගෙ 𝐏𝐌 𝐒𝐞𝐜𝐮𝐫𝐢𝐭𝐲 එකෙන් ඔයාට 𝐃𝐚𝐫𝐤 𝐒𝐡𝐚𝐫𝐤 ට 𝐌𝐬𝐠 දාන්න දෙන්නෙ නෑ ..
