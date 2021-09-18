@@ -30,7 +30,7 @@ START_TEXT = """
 
 START_BUTTON = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('King Amda Telegram',url='https://t.me/KingAmda'),
+        InlineKeyboardButton('King Amda Telegram',url='https://t.me/KingAmdaa'),
         InlineKeyboardButton('King Amda Whatsap',url='https://wa.me/94783752040')
         ],
         [
