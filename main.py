@@ -35,6 +35,7 @@ START_BUTTON = InlineKeyboardMarkup(
         ],
         [
         InlineKeyboardButton('Our Main Bot(Anki Cozmo)',url='https://t.me/TheAnkiCozmoBot'),
+        InlineKeyboardButton('Very Special Credits',url='https://t.me/DamanthaChatbot'),
         InlineKeyboardButton('GitHub',url='https://github.com/King-Amda')
         ],
         [InlineKeyboardButton('Apply For Anki Cozmo Devs', url='https://forms.gle/zvspqb7Nn2MvWmbu8')
