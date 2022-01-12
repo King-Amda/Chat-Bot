@@ -14,38 +14,34 @@ KINGAMDA = Client(
     api_hash = os.environ["API_HASH"]
 )
 
-START_IMG = "https://telegra.ph/file/0ee669c1d3e0120424822.jpg"
+START_STICKER = "CAACAgEAAxkBAAEGuU5h3v5XAAFBZBNscH9lJfI8s5qmm5MAAsUBAAJKYnlFMGvOnsDF3wEjBA"
 
 START_TEXT = """
-𝐊𝐢𝐧𝐠 𝐀𝐦𝐝𝐚 ගෙ 𝐏𝐌 𝐒𝐞𝐜𝐮𝐫𝐢𝐭𝐲 එකෙන් ඔයාට 𝐊𝐢𝐧𝐠 𝐀𝐦𝐝𝐚 ට 𝐌𝐬𝐠 දාන්න දෙන්නෙ නෑ ..
+Hi Friend ..
+How Are Your.
 
-ඒකට විකල්පයක් විදියට තමයි 𝐊𝐢𝐧𝐠 𝐀𝐦𝐝𝐚 𝐁𝐨𝐭 ව හැදුවෙ..
+I Am Nipun's Assistant.
+Put Down What You Want Nipun To Say With Your Username. He Will Look And Reply To You.
+The Important Thing Is To Come To The @NiupunDinujaya Inbox.
 
-ඔයාලට මේකෙන් 𝐊𝐢𝐧𝐠 𝐀𝐦𝐝𝐚 ව සම්බන්ධ කරගන්න පුලුවන්.
-
-ගොඩ දෙනෙක් අහන ප්‍රශ්න යට බටන් වල තියෙනවා..
-ඔයාට ඕන ඒවා තියෙනම් එතනින් ගන්න පුලුවන්.. 
-යටම තීන 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐊𝐢𝐧𝐠 𝐀𝐦𝐝𝐚 බටන් එකෙන් ඔයාට 𝐊𝐢𝐧𝐠 𝐀𝐦𝐝𝐚 ව සම්බන්ධ කර ගන්න පුලුවන්..
+Thank You.
 """
 
 START_BUTTON = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('King Amda Telegram',url='https://t.me/KingAmdaa'),
-        InlineKeyboardButton('King Amda Whatsap',url='https://wa.me/94783752040')
+        InlineKeyboardButton('Telegram',url='https://t.me/NiupunDinujaya'),
+        InlineKeyboardButton('Github',url='https://github.com/King-Amda')
         ],
         [
-        InlineKeyboardButton('Our Main Bot(Anki Cozmo)',url='https://t.me/TheAnkiCozmoBot'),
-        InlineKeyboardButton('Very Special Credits',url='https://t.me/DamanthaChatbot'),
-        InlineKeyboardButton('GitHub',url='https://github.com/King-Amda')
-        ],
-        [InlineKeyboardButton('Apply For Anki Cozmo Devs', url='https://forms.gle/zvspqb7Nn2MvWmbu8')
+        InlineKeyboardButton('Website',url='https://telegra.ph/file/7d5ce36a275474f38c418.jpg'),
+        InlineKeyboardButton('Help',url='https://telegra.ph/file/7d5ce36a275474f38c418.jpg')
         ]]
 )
 
 @KINGAMDA.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
     await update.reply_photo(
-        START_IMG,
+        START_STICKER,
         caption=PM_START_TEXT,
         reply_markup=InlineKeyboardMarkup(buttons),
         parse_mode=ParseMode.MARKDOWN,
