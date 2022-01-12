@@ -13,10 +13,9 @@ KINGAMDA = Client(
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"]
 )
-
 START_STICKER = "CAACAgEAAxkBAAEGuU5h3v5XAAFBZBNscH9lJfI8s5qmm5MAAsUBAAJKYnlFMGvOnsDF3wEjBA"
 
-START_TEXT = """
+PM_START_TEXT = """
 Hi Friend ..
 How Are Your.
 
